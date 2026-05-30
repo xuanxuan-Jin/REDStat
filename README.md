@@ -55,10 +55,12 @@ rna_stat_editing(file1,file2,output_path,design_seq_const)
 
 ## Output
 
-```text
 freq.csv   ###每种barcode对应的序列频率
 seq.csv    ###靶向序列
 df_A_POS_part.csv  ###每个barcode对应的双链中靶向序列上靶位点的编辑效率
 ```
 
 Contains A-to-G editing rates for all target positions.
+# Contact
+Xuanxuan Jin
+jean_jxx@163.com
