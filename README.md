@@ -10,8 +10,12 @@ In order to run these scripts, you will need to install R on your computer. We a
 
 Once you have your installation up and running, you will need to make sure you have some packages installed. The required packages are:
 ShortRead
+
 Biostrings
+
 parallel
+
 dplyr
+
 data.table
 # How to use?
