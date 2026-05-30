@@ -7,7 +7,9 @@ In order to run these scripts, you will need to install R on your computer. We a
 
   Downloading and Installing R - http://cran.us.r-project.org/  
   Downloading and Installing RStudio - http://www.rstudio.com/products/rstudio/download/  
+  
   R >= 4.2  
+  
 Once you have your installation up and running, you will need to make sure you have some packages installed. The required packages are:
 ShortRead  
 Biostrings  
@@ -31,7 +33,7 @@ Editing rate calculation
 | Script | Function |
 |---------|---------|
 | 01_fastq_process.R | FASTQ preprocessing |
-| 02_editing_rate_count.R | Editing quantification |
+| 02_editing_rate_count.R | Editing rate quantification |
 
 ## Usage
 
