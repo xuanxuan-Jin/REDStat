@@ -12,16 +12,6 @@ Once you have your installation up and running, you will need to make sure you h
 ShortRead
 Biostrings
 parallel
-ggplot2
-pheatmap
-EnvStats
-purrr
-RVenn
-gridExtra
-ggvenn
-egg
-GGally
-stringr
-tidyverse
-RColorBrewer
+dplyr
 data.table
+# How to use?
