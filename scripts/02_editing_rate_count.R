@@ -1,4 +1,4 @@
-####
+#### 计算靶位点编辑效率
 process_data2 <- function(design_seq_const,output_path,barcode,output_file){
   file1<-'seq.csv'
   file1<-file.path(output_path, file1)
@@ -44,4 +44,15 @@ for (j in 1:dim(barcode_freq)[1]) {
   batch_results <- process_barcode(barcode_freq$Var1[j])
 }
   print('Editing count done!'))
+}
+
+rna_stat_editing<-function(file1,file2,output_path,design_seq_const){
+    #处理reads1,reads2
+    process_fastq_files(file1,file2, output_path)
+    # 合并数据
+    process_fastq_merge1(output_path)
+    process_fastq_merge2(output_path)
+    # 计算编辑率
+    process_data1(output_path)
+    process_data2(design_seq_const,output_path)
 }
