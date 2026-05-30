@@ -5,19 +5,20 @@ In this package, we provide tools including RNA_seq data analysis,statistical an
 # Requirements
 In order to run these scripts, you will need to install R on your computer. We also suggest using RStudio as an IDE.
 
-  Downloading and Installing R - http://cran.us.r-project.org/
-  Downloading and Installing RStudio - http://www.rstudio.com/products/rstudio/download/
+  Downloading and Installing R - http://cran.us.r-project.org/  
+  Downloading and Installing RStudio - http://www.rstudio.com/products/rstudio/download/  
   R >= 4.2
 # Workflow  
-FASTQ files
-↓
-Barcode extraction
-↓
-Read pairing
-↓
-Construct reconstruction
-↓
-Editing rate calculation
+FASTQ files  
+↓  
+Barcode extraction  
+↓  
+Read pairing  
+↓  
+Construct reconstruction  
+↓  
+Editing rate calculation  
+
 Once you have your installation up and running, you will need to make sure you have some packages installed. The required packages are:
 ShortRead  
 Biostrings  
