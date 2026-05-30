@@ -299,7 +299,7 @@ process_data1 <- function(output_path,output_file='seq.csv'){
   fwrite(seq, output_file, sep = ',', col.names = T, row.names = FALSE)
   }
 
-rna_stat_seq<-function(file1,file2,output_path){
+rna_seq<-function(file1,file2,output_path){
     #处理reads1,reads2
     process_fastq_files(file1,file2, output_path)
     # 合并数据
