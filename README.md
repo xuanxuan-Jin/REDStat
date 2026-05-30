@@ -51,14 +51,14 @@ file2 <- 'sample_R2.fastq'  # Constructing file2 name
 output_path <- 'sample'  # Assigning output_path as a character string
 design_seq_const <- L1
 
-rna_stat_editing(file1,file2,output_path,design_seq_const)
+rna_seq(file1,file2,output_path,design_seq_const)
 
 ## Output
 
 ```text
-df_A_POS_part.csv
+freq.csv
+seq.csv  
+df_A_POS_part.csv  
 ```
 
 Contains A-to-G editing rates for all target positions.
-
-这是一个符合生信项目规范、适合放在博士论文代码仓库里的 README 模板。
