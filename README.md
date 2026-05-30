@@ -26,3 +26,29 @@ Construct reconstruction
 ↓  
 Editing rate calculation  
 # How to use?
+## Scripts
+
+| Script | Function |
+|---------|---------|
+| 01_fastq_process.R | FASTQ preprocessing |
+| 02_editing_rate_count.R | Editing quantification |
+
+## Usage
+
+```R
+process_fastq_files(
+    file1,
+    file2,
+    output_path
+)
+```
+
+## Output
+
+```text
+df_A_POS_part.csv
+```
+
+Contains A-to-G editing rates for all target positions.
+
+这是一个符合生信项目规范、适合放在博士论文代码仓库里的 README 模板。
