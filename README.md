@@ -51,14 +51,14 @@ file2 <- 'sample_R2.fastq'  # Constructing file2 name
 output_path <- 'sample'  # Assigning output_path as a character string
 design_seq_const <- L1
 
-rna_seq(file1,file2,output_path,design_seq_const)
+rna_stat_editing(file1,file2,output_path,design_seq_const)
 
 ## Output
 
 ```text
-freq.csv
-seq.csv  
-df_A_POS_part.csv  
+freq.csv   ###每种barcode对应的序列频率
+seq.csv    ###靶向序列
+df_A_POS_part.csv  ###每个barcode对应的双链中靶向序列上靶位点的编辑效率
 ```
 
 Contains A-to-G editing rates for all target positions.
