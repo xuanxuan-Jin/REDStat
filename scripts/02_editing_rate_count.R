@@ -6,8 +6,8 @@ process_data2 <- function(design_seq_const,output_path,barcode,output_file){
    # 读取两个文件并设置索引
    columns_to_select <- c('barcode', 'Whole_Construct')
    seq1 <- fread(file1, sep = ',', header = TRUE, select = columns_to_select)
+  
    # 生成频率表
-    
     barcode<-file.path(output_path, barcode)
     barcode_freq <- read.table(barcode,header=T,sep=',')
     barcode_freq<-barcode_freq[which(barcode_freq$Freq>=50),]
@@ -22,7 +22,6 @@ process_data2 <- function(design_seq_const,output_path,barcode,output_file){
     
     # 计算共识矩阵
     consensus_matrix_barcode <- t(consensusMatrix(Sequence_barcode_StringSet))[, c(1:4, 15:16)]
-    
     consensus_matrix_barcode <- as.data.frame(consensus_matrix_barcode)
     consensus_matrix_barcode$position <- 1:nrow(consensus_matrix_barcode)
     consensus_matrix_barcode$A_to_G_rate <- (consensus_matrix_barcode$G / (consensus_matrix_barcode$A +      consensus_matrix_barcode$G)) * 100
@@ -40,12 +39,9 @@ process_data2 <- function(design_seq_const,output_path,barcode,output_file){
   })
 }
 
-            
-
 A_G_positions <- unlist(gregexpr('A', design_seq_const))
 for (j in 1:dim(barcode_freq)[1]) {
   batch_results <- process_barcode(barcode_freq$Var1[j])
 }
-    
   print('Editing count done!'))
 }
