@@ -9,9 +9,9 @@ In order to run these scripts, you will need to install R on your computer. We a
   Downloading and Installing RStudio - http://www.rstudio.com/products/rstudio/download/
 
 Once you have your installation up and running, you will need to make sure you have some packages installed. The required packages are:
-ShortRead
-Biostrings
-parallel
-dplyr
-data.table
+ShortRead  
+Biostrings  
+parallel  
+dplyr  
+data.table  
 # How to use?
